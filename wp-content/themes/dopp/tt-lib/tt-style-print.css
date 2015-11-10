@@ -1,0 +1,67 @@
+/*@media screen and (max-width:8.5in) {*/
+
+
+@media print {
+    
+@page { size:8.5in 11in; margin: 0; }
+
+a[href]:after {
+    content:none !important;
+  }    
+    
+    
+#wrapper {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}    
+  
+#header {
+    display:none;
+}
+.myprint,
+.hidden-xs {
+    display:block !important;
+}
+
+.list-name {
+    font-size:18px;
+}
+
+.sqft {
+    float:left !important;
+    font-size:12px !important;
+    margin-right:10px !important;
+    margin-top:5px !important;
+}
+
+.contact-name {
+    float:left !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+} /* end print css */

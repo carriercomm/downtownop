@@ -1,0 +1,1 @@
+[05-Mar-2014 10:10:22 America/Chicago] PHP Fatal error:  Call to undefined function add_action() in /home/two020cr/public_html/dopp/wp-content/plugins/2020-admin/index.php on line 13

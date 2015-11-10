@@ -1,0 +1,94 @@
+/********************** media mobile start **********************/
+
+@media screen and (max-width: 768px) {
+    
+#main {
+    padding:0px;
+    margin:0px;
+}
+.twocolumns {
+    margin-right:15px;
+}
+.news-img {
+    display:none;
+}
+.navbar-header {
+    color:white;
+    text-decoration:none;
+    background-color:#147000;
+}
+.mobile-menu {
+    padding:15px;
+}
+.mobile-menu li{
+    padding-top:1.0em;
+    list-style-type:none;
+}
+.navbar-header a{
+    color:white !important;
+    text-decoration:none;
+}
+.navbar-toggle {
+    border-color:#21B102;
+}
+.icon-bar {
+    background-color: white !important;
+}
+.navbar-toggle {
+    background-color:#21b102;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #136402;
+}
+.social-bar .text {
+    display: block;
+    overflow: hidden;
+}
+.social-bar {
+    margin: 0 0 20px;
+    padding: 10px;
+    font-size: 1.0em;
+    color: #ccdae6;
+    background: #056ca4;
+}
+.social-bar {
+    margin:22px 0px;
+}
+.business-list {
+    padding:0px;
+}
+.menu-business-types-container {
+    display:none;
+}
+.dopplist {
+    max-width: 750px !important;
+}
+select.dopplist {
+    width:100% !important;
+}
+#content-page, #content {
+    margin:0px !important;
+}
+.search-bar {
+    float:none;
+    margin:0 0 0 15px;
+    padding:0px;
+}
+.columns-holder {
+    
+}
+.business-list {
+    padding:0px;
+    margin:0 15px 0 0;
+}
+.biz-mobile, .biz-search {
+    margin:0 0 0 15px;
+}
+.ad {
+    text-align:center;
+}
+.promo-link {
+    display:none;
+}
+}
+/******************************************************************/

@@ -1,0 +1,752 @@
+/*
+Theme Name: DOPP
+Author: 2020 Creative
+Author URI:
+Version: 1.8
+Description: DOPP theme for Wordpress
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: dopp
+Tags: one-column, two-columns
+Theme URI:
+GitHub Theme URI: https://github.com/creative2020/dopp
+GitHub Branch: master
+*/
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text,
+.gallery-caption {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+.sticky,
+.bypostauthor{
+	display:block;
+}
+
+
+/* main elements */
+.product-block .product-list li.margin-set { margin:0 2px 7px 0;}
+.inner #content {
+  min-height: 375px;
+}
+
+.comments,#respond {
+ overflow:hidden;
+}
+
+.meta { overflow:hidden; padding: 0 0 10px 0; }
+.meta ul { margin:0; list-style:none; }
+.meta li {
+	list-style:none;
+	float:left;
+	padding: 0 5px 0 0;
+}
+
+#respond input {
+ margin: 5px 0;
+ width: 300px;
+}
+.commentlist {margin:0;}
+#comments { overflow:hidden;}
+#respond textarea {
+ width: 300px;
+}
+#respond label { display:block;}
+#respond #submit {
+ width:150px
+}
+
+#header .author strong {
+    color: #646262;
+    font-size: 26px;
+}
+.commentlist li {
+ list-style:none;
+ margin:5px;
+}
+.commentlist li p {
+ margin:0 !important;
+}
+.commentlist li .avatar {
+ float: left;
+ margin: 5px;
+}
+.navigation { overflow:hidden;  }
+.navigation .next { float:right;}
+.navigation .prev { float:left; }
+
+#content .news p,#content .news .link{
+	float:left;
+}
+#content .news .link{
+	padding-left:2px;
+}
+/* 2020 styles */
+/* Footer */
+.footer {
+    color:#ffffff;
+    background-color:#056ca4;
+    margin:16px 0px 16px 0px !important;
+    padding:20px !important;
+    font-size: 0.9em;
+}
+.footer a {
+    color:#ffffff;
+    text-decoration:none;
+}
+.footer a:hover {
+    color:#ccdae6;
+}
+
+/* Business and Living Directory */
+.business-group,
+#business-content {
+    width:100%;
+    margin:12px 0px;
+    padding-right:0px;
+}
+.list-view,
+.business-list {
+    font-size:1.1em;
+    padding: 20px 0 0 8px;
+    background-color:#fff;
+    margin:0 45px 0 22px;
+    border-bottom: 1px solid #ccc;
+}
+.list-view {
+    padding: 10px 15px;
+    margin:0 0 0 0;
+}
+.list-small {
+    padding: 5px 0px !important;
+    margin:0 0 0 0 !important;
+}
+.business-list-photo-wrap {
+	width:50px;
+	height:50px;
+	float: left;
+	background-color: #dddddd;
+	border-radius: 50px;
+	border: 2px solid transparent;
+	overflow: hidden;
+	margin: -15px 8px 8px -30px;
+}
+.business-list-photo-wrap:hover {
+	border: 2px solid #21B102;
+}
+.business-list-photo {
+	float: left;
+	width:50px;
+	height:50px;
+	/* background-color: #21B102; */
+	border-radius: 50px;
+}
+.business-list-photo img{
+	margin: 0;
+}
+.list-view:hover,
+.business-list:hover {
+    background-color:#ccdae6;
+}
+.list-name,
+.business-name {
+    font-weight:700 !important;
+    color:#056ca4;
+    margin-left:0px;
+}
+.living-name {
+    font-weight:700;
+    color:#056ca4;
+    float:left;
+    margin-left:0px;
+    overflow: hidden;
+    max-width: 310px;
+}
+.address-line {
+    width:20%;
+    float:left;
+    margin-right: 8px;
+}
+.address-living-line {
+}
+.address-line-1 {
+    float:left;
+}
+.address-line-2 {
+   float:left;
+}
+.list-accent,
+.phone {
+    color:#056ca4;
+    margin-left:0px;
+    float:left;
+}
+.living-phone {
+	font-size:1.0em;
+	margin-left:-15px;
+    color:#056ca4;
+}
+.business-type {
+    width:30%;
+    margin-left:0px;
+    float:left;
+    overflow:hidden;
+}
+.living-type {
+	margin: 0 0 0 4px;
+	max-height: 30px;
+    overflow:hidden;
+}
+.edit {
+    font-size:0.7em;
+    color:#ccc;
+}
+.edit-pencil-link a{
+    font-size:0.9em;
+    color:#929292;
+    margin-left:4px;
+}
+.edit-pencil-link a:hover{
+    color:red;
+}
+.gray {
+	color:#929292;
+}
+.edit a {
+    color:#ccc;
+    background-color:#056ca4;
+    text-decoration:none;
+    padding:4px 8px;
+}
+.edit a:hover {
+    color:#fff;
+    background-color:#f00;
+}
+.clear {
+    clear:both;
+}
+
+
+.business-type {
+	float:left;
+}
+/* 2020 business detail */
+
+.business-img {
+	overflow: hidden;
+	margin-bottom: 1.5em;
+}
+.business-img img {
+	position: relative;
+   	top: -50%;
+}
+/* business info bar */
+.business-info-bar{
+	width:100%;
+	height: 55px;
+	background-color:#1A88FF;
+	margin:0;
+}
+.business-info-bar a {
+	width:100%;
+	font-size: 1.5em;
+	color:white;
+	text-decoration: none;
+}
+.business-www, 
+.business-fb,
+.gift-accept {
+	color: #FFFFFF;
+	margin:0;
+	padding: 10px 15px;
+}
+.gift-accept {
+	padding:18px 10px;
+	margin-left: 8px;
+}
+.business-www:hover, 
+.business-fb:hover {
+	background-color: #21B102;
+}
+.business-www a, 
+.business-fb a, 
+.gift-accept a {
+	color:#fff;
+	text-decoration: none;
+}
+.business-name-detail {
+	color:#056ca4;
+	margin-top:30px;
+}
+.hrs-old p {
+	padding:1.0em 0;
+	font-size: 1.5em;
+}
+/* Hours of Operation */
+h3.business-hrs-title {
+	font-size: 2.0em !important;
+	color:#00448C;
+	font-weight: 300;
+	margin-top: 11px !important;
+	margin-bottom: 8px;
+	display: block;
+	float:none;
+	clear:both;
+}
+.hours-list ul {
+	padding:1.0em;
+	margin:4px 0;
+}
+.hours-list li {
+	font-size: 1.0em;
+	list-style-type: none;
+	line-height: 1.4em;
+	
+}
+.hours-list li.hrs-label {
+	color:#00448C;
+	float: left;
+	width:120px;
+}
+.hours-list li.hrs-time {
+	color:#147000;
+}
+
+/* business address bar */
+.business-add-info {
+	background-color:#00448C;
+	padding:1.0em 0.5em;
+    width:100%;
+    min-height: 1.2em;
+	font-size: 1.5em;
+	color:#fff;
+}
+.business-add1 { 
+	text-align:left;
+	float:left;
+	color:#FFFFFF; 
+}
+.business-add2 { 
+	text-align:left;
+	float:left;
+	color:#FFFFFF;
+	margin: 0 1%;
+ 
+}
+.business-city { 
+	display: none;
+	}
+.business-ph {
+	float:left;
+	font-weight: 700;
+	margin: 0 3%;
+	}
+.attachment-large wp-post-image img {
+	height: 200px;
+	width: 300px;
+	overflow: hidden;
+}
+.hrs-time {
+	font-size:12px;
+	text-decoration:bold;
+}
+/* News */
+.news-exceprt-title {
+	font-size:20px;
+	margin-bottom:14px;
+}
+
+.news-excerpt-wrap {
+	margin-bottom:14px;
+}
+
+.news-headline {
+	color:#056ca4;
+	margin-top:30px;
+	line-height:26px;
+}	
+.ul {
+list-style: none;
+}
+
+.img-holder {
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+		  margin:0 0 -20px 0;
+		  position: relative;
+}
+ 
+.img-holder:hover {
+	position: relative;
+	margin:0 0 -10px 0;
+	text-decoration: none;
+}
+.home {
+	height:100px;
+	padding: 0;
+}
+.home img {
+	margin-top: 0px;
+	background-size: contain;
+}
+.news-img {
+	margin-top: 0px;
+	height:100px;
+	overflow: hidden;
+	position: relative;
+	background-position: center;
+	background-size: contain !important;
+	margin-bottom:8px !important;
+	background-repeat: no-repeat !important;
+}
+
+.button {
+-webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+
+.button:hover {
+  background-color: green;
+}
+
+.btn-promos {
+-webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+
+.btn-promos:hover {
+  -webkit-filter: grayscale(80%);
+}
+
+.post-title {
+	color:#056ca4;
+	font-size:30px;
+	margin-top:30px;
+	line-height:26px;
+}
+.living-contact-info {
+	min-height:150px;
+}
+.mailto-link,
+.mailto-link a:hover {
+	color:inherit;
+	text-decoration: none;
+}
+.mailto-link a:hover {
+	color:white !important;
+}
+a.mailto-link a:hover {
+	color:white !important;
+}
+.button-primary a.mailto-link a:hover {
+	color:white;
+	text-decoration: none;
+}
+p.living-type {
+	font-size: 1.3em;
+	padding:0.5em;
+	margin:0 !important;
+}
+.btn {
+	text-decoration: none !important;
+}
+.menu-living li a,
+.mailto-link {
+	color:white !important;
+	text-decoration: none;
+}
+.menu-living-types-container {
+}
+.color-primary {
+	color:@brand-primary;
+}
+.post-info {
+	font-size: 0.9em;
+	margin:0;
+	color:#444444;
+}
+.hline {
+	display: block;
+	margin:12px 0;
+	height:12px;
+	width:100%;
+	border-color:@brand-primary;
+	border-top: 1px solid #888888;
+	clear:both;
+}
+.post-comments {
+	margin:8px 0;
+	color:#a4a4a4;
+	padding:8px;
+	min-height:25px;
+	border-top: 0px;
+	border-bottom: 0px;
+	border-style: solid;
+	border-color: #a3a3a3;
+}
+.post-img {
+	margin-right: 16px;
+	background-color: #cccccc;
+}
+/* Map icons */
+.dopp-marker{
+	display:inline-block;
+	margin-bottom: -10px;
+	margin-right:8px;
+	width:26px;
+	height:37px;
+	text-indent:-9999px;
+	overflow:hidden;
+	background:url(images/dopp-sprite.png) no-repeat -0px -333px;
+}
+.green {background-position:-0px -333px;}
+.dk-blue {background-position:-26px -333px;}
+.orange {background-position:-52px -333px;}
+.red {background-position:-78px -333px;}
+.lt-blue {background-position:-104px -333px;}
+
+.m-left {
+	margin-left: 8px;
+}
+.m-right {
+	margin-right: 8px;
+}
+.btn a {
+	text-decoration: none;
+}
+.cpm-map {
+	margin-top: 0px;
+	border: 1px solid #999999;
+}
+.dopp-map {
+	width:100%;
+	height:375px;
+	display: block;
+}
+.rslides_nav {
+	z-index: 2 !important;
+}
+#tribe-bar-views .tribe-bar-views-list {
+	z-index: 2 !important;
+}
+.no-underline {
+	text-decoration: none;
+}
+.article-wrap {
+	border-bottom:6px solid #888888;
+	margin:22px 0px;
+}
+.article-info {
+	min-height: 175px;
+	margin:0 0 0 0;
+    padding:0 1.0em;
+}
+.img-cir {
+	overflow: hidden;
+}
+.img-cir-container {
+	width:140px;
+	height:140px;
+	overflow: hidden;
+	border-radius: 50%;
+}
+.img-cir-container img{
+	margin:0 auto;
+}
+.sqft {
+	color:#b8b8b8;
+	font-size: 0.5em;
+	margin-top: 8px;
+	float:right;
+}
+.data-label, .field {
+	margin-left:4px;
+}
+.wp-media-buttons,
+.wp-media-buttons .button,
+.row-actions {
+	display: none !important;
+}
+.dopplist {
+	height:2.3em;
+	border:1px solid #cccccc;
+}
+.menu-business-types-container,
+.menu-map-submenu-container {
+	float:left;
+}
+/* Promo buttons */
+.promo-btn-group {
+	height:100px;
+	width:100%;
+	margin-bottom:22px;
+		
+}
+.promo-img-holder {
+	height:100px;
+	width:100%;
+	overflow: hidden;
+	padding-top:0px;
+	margin-top:0px;
+	background-image: url(images/img04.jpg);
+	background-repeat: no-repeat;
+	background-position: center 5px;
+	z-index: 1;
+}
+.nl {
+	background-image: url(images/img05.jpg) !important;
+}
+.coupon {
+	margin-top:-44px;
+	background-image: none !important;
+}
+.promo-img-holder:hover {
+	
+	background-position: center 0px;
+	z-index: 1;
+}
+.promo-btn {
+	color:white;
+	height:35px;
+	width:100%;
+	display: block;
+	position: relative;
+	font: 20px/24px Helvetica, Arial, sans-serif;
+	color: #fff;
+	text-decoration: none;
+	letter-spacing: -1px;
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.71);
+	border-radius: 3px;
+	background: #093c71;
+	text-align: center;
+	margin:-35px 0;
+	z-index: 2;
+	
+}
+.promo-btn:hover{
+	color:white;
+	background-color: green;
+	
+}
+.promo-btn p{
+	margin:0;
+	padding:6px;
+	color:white;
+	text-decoration: none;
+	
+}
+.promo-link {
+	border:0px solid red;
+	text-decoration: none;
+}
+.dopplist {
+	max-width:255px;
+}
+.dopplist-container {
+	margin-top: 8px;
+}
+.ad {
+    display:block;
+}
+.ad-leaderboard-b {
+    margin:0 15px 0 -15px;
+}
+.ad-leaderboard-b img {
+    background-color:#ccc;
+    min-height:75px;
+}
+.search-bar {
+    width:30%;
+    float:right;
+    margin:0 45px 0 0;
+}
